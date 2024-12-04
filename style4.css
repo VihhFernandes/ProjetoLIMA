@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #10283F;
+    overflow-y: auto; /* Permite rolagem vertical */
+    height: 100vh; /* 100% da altura da janela */
+}
+ 
+header {
+    background-color: #000000;
+    padding: 30px;
+}
+h1{
+    margin: 0;
+}
+ 
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ 
+nav li {
+    margin-right: 20px;
+}
+ 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+ 
+.imag {
+    margin-right: 20px;
+}
+ 
+input[type="text"] {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px;
+}
+ 
+
+
+.content h1 {
+    font-size: 20px; /* Tamanho do título reduzido */
+    color: #AFC8E0;
+    padding: 10px;
+    margin: 10px;
+}
+ 
+.content p {
+    font-size: 18px; /* Tamanho do texto reduzido */
+    color: #fff;
+    padding: 15px;
+ 
+}
+ 
+.info-box h2 {
+    font-size: 20px; /* Tamanho do título do quadrado reduzido */
+    color: #AFC8E0;
+}
+ 
+.info-box p {
+    font-size: 15px; /* Tamanho do texto no quadrado reduzido */
+    color: #fff;
+}
+ 
+.info-box {
+    background-color: #567899; /* Fundo semi-transparente para destacar */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px; /* Diminui o espaçamento interno para reduzir a altura */
+    margin: 15px 5%; /* Margem para aproximar o quadrado das bordas */
+}
+ 
+ 
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+ 
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-final {
+    font-size: 18px; /* Tamanho do texto reduzido */
+    color: #fff;
+    padding: 20px;
+}

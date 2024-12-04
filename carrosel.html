@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleC.css">
+    <title>carrosel</title>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <input type="text" placeholder="Pesquisar...">
+            <div class="imag">
+                <img src="Logo 1.png" width="60" height="60" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="carrosel.html">Home</a></li>
+                    <li><a href="pag6.html">Sobre nós</a></li>
+                    <li><a href="pag5.html">Oque é?</a></li>
+                    <li><a href="pag3.html">Serviços</a></li>
+                    <li><a href="pag4.html">Blog</a></li>
+                    <li><a href="pag2.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <div class="carrossel">
+        <div class="imagens">
+            <img class="imagem" src="carrosel1.png" alt="carrosel 1">
+            <img class="imagem" src="carrosel2.png" alt="carrosel 2">
+            <img class="imagem" src="carrosel3.png" alt="carrosel 3">
+            <img class="imagem" src="carrosel4.png" alt="carrosel 4">
+        </div>
+        <button class="botao botao-esquerda" onclick="mover(-1)">&#10094;</button>
+        <button class="botao botao-direita" onclick="mover(1)">&#10095;</button>
+    </div>
+    
+
+    <script>
+        let indice = 0;
+    
+        function mudarImagem() {
+            const imagens = document.querySelector('.imagens');
+            const totalImagens = document.querySelectorAll('.imagem').length;
+            indice = (indice + 1) % totalImagens; // Avança para a próxima imagem
+            const largura = -indice * 100;
+            imagens.style.transform = `translateX(${largura}%)`;
+        }
+    
+        setInterval(mudarImagem, 3000); // Muda a imagem a cada 3 segundos
+    
+    </script>
+    
+    <a href="pag6.html" class="contact-button">INICIAR</a>
+
+    <footer>
+        <div class="footer-content">
+          <p>&copy; 2024 ArtMindStudio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+

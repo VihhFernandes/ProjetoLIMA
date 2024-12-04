@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <header>
+        <div class="nav">
+            <input type="text" placeholder="Pesquisar...">
+            <div class="imag">
+                <img src="Logo 1.png" width="60" height="60" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="carrosel.html">Home</a></li>
+                    <li><a href="pag6.html">Sobre nós</a></li>
+                    <li><a href="pag5.html">Oque é?</a></li>
+                    <li><a href="pag3.html">Serviços</a></li>
+                    <li><a href="pag4.html">Blog</a></li>
+                    <li><a href="pag2.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ 
+
+    <div class="contact-form">
+        <h2>ArtMindStudio</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Digitar" required>
+            </div>
+            <div class="form-group">
+                <label for="contact-name">E-mail:</label>
+                <input type="text" id="contact-name" name="contact-name" placeholder="Digitar" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Assunto:</label>
+                <input type="email" id="email" name="email" placeholder="Digitar" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Mensagem:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Digitar">
+            </div>
+
+            <div class="form-group">
+                <label>Tipo de Interesse:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interest[]" value="Banners"> Banners</label>
+                    <label><input type="checkbox" name="interest[]" value="Campanhas"> Campanhas</label>
+                    <label><input type="checkbox" name="interest[]" value="Plataforma"> Plataforma</label>
+                    <label><input type="checkbox" name="interest[]" value="Outros"> Outros</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Consentimento de Privacidade:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interest[]" value="Concordo"> Concordo</label>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Enviar</button>
+            
+        </form>
+    </div>
+
+
+
+
+    <footer>
+        <div class="footer-content">
+          <p>&copy; 2024 ArtMindStudio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body> 
+</html>
